@@ -7,17 +7,22 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack"
 import { AppStackScreenProps } from "app/navigators"
 import { Screen, Text } from "app/components"
 import React, { useState, useCallback, FC } from "react";
-import { ViewStyle, Alert, SafeAreaView, FlatList } from "react-native";
+import { ViewStyle, Alert, View, FlatList } from "react-native";
 import YoutubePlayer from "react-native-youtube-iframe";
 import { spacing } from "../theme"
 import videoData from '../services/api/tempApi.json'
+
+import { useSafeAreaInsetsStyle } from "../utils/useSafeAreaInsetsStyle"
+
+
 interface VideoPreviewScreenProps extends NativeStackScreenProps<AppStackScreenProps<"VideoPreview">> { }
 export const VideoPreviewScreen: FC<VideoPreviewScreenProps> = observer(function VideoPreviewScreen() {
   // Pull in one of our MST (mobx state tree) stores 
   // const { someStore, anotherStore } = useStores()
-
+  
   const [playing, setPlaying] = useState(false);
-
+  
+  const $topContainerInsets = useSafeAreaInsetsStyle(["top"])
   const onStateChange = useCallback((state) => {
     if (state === "ended") {
       setPlaying(false);
@@ -58,7 +63,7 @@ export const VideoPreviewScreen: FC<VideoPreviewScreenProps> = observer(function
 
 
       <Text style={$title}> VideoPlayer</Text>
-      <SafeAreaView  >
+      <View style={$topContainerInsets } >
         <FlatList
           refreshing={refreshing}
           onRefresh={manualRefresh}
@@ -73,7 +78,7 @@ export const VideoPreviewScreen: FC<VideoPreviewScreenProps> = observer(function
 
         </FlatList>
         {/* <Button title={playing ? "pause" : "play"} onPress={togglePlaying} /> */}
-      </SafeAreaView></Screen>
+      </View></Screen>
   );
 })
 
