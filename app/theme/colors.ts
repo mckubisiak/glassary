@@ -1,4 +1,6 @@
 // TODO: write documentation for colors and palette in own markdown file and add links from here
+// https://coolors.co/505ca8-fa7921-d0c7c6-4df7f3-fff53d
+
 
 const palette = {
   neutral100: "#FFFFFF",
@@ -23,6 +25,19 @@ const palette = {
   secondary300: "#9196B9",
   secondary400: "#626894",
   secondary500: "#41476E",
+
+  // primary100: "#4324c2",
+  // primary200: "#19323C",
+  // primary300: "#BEB8EB",
+  // primary400: "#4DF7F3",
+  // primary500: "#C76542",//
+  // primary600: "#A54F31",//
+
+  // secondary100: "#69140E",
+  // secondary200: "#BCC0D6",
+  // secondary300: "#FA7921",
+  // secondary400: "#FFF53D",
+  // secondary500: "#41476E", //
 
   accent100: "#FFEED4",
   accent200: "#FFE1B2",
