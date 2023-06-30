@@ -13,30 +13,30 @@ const palette = {
   neutral800: "#191015",
   neutral900: "#000000",
 
-  primary100: "#F4E0D9",
-  primary200: "#E8C1B4",
-  primary300: "#DDA28E",
-  primary400: "#D28468",
+  // primary100: "#F4E0D9",
+  // primary200: "#E8C1B4",
+  // primary300: "#DDA28E",
+  // primary400: "#D28468",
   primary500: "#C76542",
   primary600: "#A54F31",
 
-  secondary100: "#DCDDE9",
-  secondary200: "#BCC0D6",
-  secondary300: "#9196B9",
-  secondary400: "#626894",
+  // secondary100: "#DCDDE9",
+  // secondary200: "#BCC0D6",
+  // secondary300: "#9196B9",
+  // secondary400: "#626894",
   secondary500: "#41476E",
 
-  // primary100: "#4324c2",
-  // primary200: "#19323C",
-  // primary300: "#BEB8EB",
-  // primary400: "#4DF7F3",
+  primary100: "#4324c2",
+  primary200: "#19323C",
+  primary300: "#BEB8EB",
+  primary400: "#4DF7F3",
   // primary500: "#C76542",//
   // primary600: "#A54F31",//
 
-  // secondary100: "#69140E",
-  // secondary200: "#BCC0D6",
-  // secondary300: "#FA7921",
-  // secondary400: "#FFF53D",
+  secondary100: "#69140E",
+  secondary200: "#BCC0D6",
+  secondary300: "#FA7921",
+  secondary400: "#FFF53D",
   // secondary500: "#41476E", //
 
   accent100: "#FFEED4",
