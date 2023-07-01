@@ -5,7 +5,7 @@
 import { observer } from "mobx-react-lite"
 import { NativeStackScreenProps } from "@react-navigation/native-stack"
 import { AppStackScreenProps } from "app/navigators"
-import { Screen, Text } from "app/components"
+import { Screen, Text, YoutubeIframe } from "app/components"
 import React, { useState, useCallback, FC } from "react";
 import { ViewStyle, Alert, View, FlatList } from "react-native";
 import YoutubePlayer from "react-native-youtube-iframe";
@@ -61,24 +61,10 @@ export const VideoPreviewScreen: FC<VideoPreviewScreenProps> = observer(function
   return (
     <Screen style={$root}>
 
-
+<YoutubeIframe></YoutubeIframe>
       <Text style={$title}> VideoPlayer</Text>
       <View style={$topContainerInsets } >
-        <FlatList
-          refreshing={refreshing}
-          onRefresh={manualRefresh}
-          data={randomVideo}
-          renderItem={({ item }) => <YoutubePlayer
-            height={300}
-            play={playing}
-            videoId={item.id}
-            onChangeState={onStateChange}
-
-          />}>
-
-        </FlatList>
-        {/* <Button title={playing ? "pause" : "play"} onPress={togglePlaying} /> */}
-      </View></Screen>
+              </View></Screen>
   );
 })
 
