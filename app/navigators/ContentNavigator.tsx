@@ -2,14 +2,14 @@
 import React from "react"
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs"
 import {
-  VideoPreviewScreen, WelcomeScreen,
+  RandomScreen, SearchScreen,
 } from "app/screens"
 import { colors, spacing } from "app/theme"
 import { ViewStyle } from "react-native"
 
 export type ContentNavigatorParamList = {
-  Demo: undefined
-  VideoPreview: undefined
+  Search: undefined
+  Random: undefined
 }
 
 const Tab = createMaterialTopTabNavigator<ContentNavigatorParamList>()
@@ -25,8 +25,8 @@ export const ContentNavigator = () => {
         
       },
     }}>
-      <Tab.Screen name="VideoPreview" component={VideoPreviewScreen} />
-      <Tab.Screen name="Demo" component={WelcomeScreen} />
+      <Tab.Screen name="Random" component={RandomScreen} />
+      <Tab.Screen name="Search" component={SearchScreen} />
     </Tab.Navigator>
   )
 }

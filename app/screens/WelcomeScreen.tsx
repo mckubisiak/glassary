@@ -12,7 +12,7 @@ import { useSafeAreaInsetsStyle } from "../utils/useSafeAreaInsetsStyle"
 const welcomeLogo = require("../../assets/images/logo.png")
 const welcomeFace = require("../../assets/images/welcome-face.png")
 
-interface WelcomeScreenProps extends AppStackScreenProps<"Demo"> {}
+interface WelcomeScreenProps extends AppStackScreenProps<"Search"> {}
 
 export const WelcomeScreen: FC<WelcomeScreenProps> = observer(function WelcomeScreen(
 ) {

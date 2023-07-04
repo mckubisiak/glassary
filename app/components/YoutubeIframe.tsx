@@ -55,7 +55,7 @@ export const YoutubeIframe = observer(function YoutubeIframe(props: YoutubeIfram
   
   return (
     <View style={$styles}>
-      <Text style={$text}>Hello</Text>
+      <Text style={$text}></Text>
       <FlatList
           refreshing={refreshing}
           onRefresh={manualRefresh}

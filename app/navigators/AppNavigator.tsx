@@ -35,8 +35,8 @@ import { navigationRef, useBackButtonHandler } from "./navigationUtilities"
  *   https://reactnavigation.org/docs/typescript/#organizing-types
  */
 export type AppStackParamList = {
-  Demo: undefined
-  VideoPreview: undefined
+  Search: undefined
+  Random: undefined
   Content:  NavigatorScreenParams<ContentNavigatorParamList>
   // 🔥 Your screens go here
   // IGNITE_GENERATOR_ANCHOR_APP_STACK_PARAM_LIST
@@ -64,8 +64,8 @@ const AppStack = observer(function AppStack() {
     >
 
       <Stack.Screen name="Content" component={ContentNavigator} />
-      <Stack.Screen name="VideoPreview" component={Screens.VideoPreviewScreen} />
-      <Stack.Screen name="Demo" component={Screens.WelcomeScreen} />
+      <Stack.Screen name="Random" component={Screens.RandomScreen} />
+      <Stack.Screen name="Search" component={Screens.SearchScreen} />
 
       {/** 🔥 Your screens go here */}
       {/* IGNITE_GENERATOR_ANCHOR_APP_STACK_SCREENS */}
