@@ -5,7 +5,7 @@ import {
   Text,
 } from "../components"
 import { isRTL } from "../i18n"
-import { AppStackScreenProps } from "../navigators" // @demo remove-current-line
+import { AppStackScreenProps } from "../navigators"
 import { colors, spacing } from "../theme"
 import { useSafeAreaInsetsStyle } from "../utils/useSafeAreaInsetsStyle"
 

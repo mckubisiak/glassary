@@ -15,7 +15,8 @@
     "lib": ["esnext", "dom"],
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "baseUrl": "./"
+    "baseUrl": "./",
+    "esModuleInterop": true,
   },
   "exclude": ["node_modules"],
   "include": ["index.js", "App.js", "app", "test"],
